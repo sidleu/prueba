@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="error_not_type_document">No llego el tipo de documento</string>
+    <string name="error_not_save">Al parecer hubo un error, por favor intenta nuevamente</string>
+    <string name="error_not_read_data">No se pudo leer los datos</string>
+    <string name="error_save_data_server">No se pudo procesar la imagen</string>
+    <string name="error_load_bitmap">No se puedo obtener la imagen</string>
+    <string name="error_service_inactive">Este servicio no esta activo en tu convenio</string>
+</resources>

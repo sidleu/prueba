@@ -1,0 +1,147 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+}
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven-publish'
+group = group_reconoserId
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.findByName('release')
+                //from components.release
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.github.reconoser'
+                artifactId = 'reconosersdk'
+                version = library_version
+            }
+        }
+    }
+}
+
+android {
+    compileSdkVersion 33
+    //buildToolsVersion "33.0.1"
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName library_version
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    defaultPublishConfig "productionRelease"
+    // Specifies one flavor dimension.
+    flavorDimensions "releaseType"
+    productFlavors {
+        develop {
+            dimension "releaseType"
+            buildConfigField "String", "RETROFIT_OLIMPIA_URL", project.property('URL_OLIMPIA_DEV')
+            buildConfigField "String", "RETROFIT_RECONOSERID_URL", project.property('URL_RECONOSERID_DEV')
+            buildConfigField "String", "USER_TOKEN", project.property('USER_TOKEN')
+            buildConfigField "String", "PASS_TOKEN", project.property('PASS_TOKEN')
+        }
+        staging {
+            dimension 'releaseType'
+            buildConfigField "String", "RETROFIT_OLIMPIA_URL", project.property('URL_OLIMPIA_STAGING')
+            buildConfigField "String", "RETROFIT_RECONOSERID_URL", project.property('URL_RECONOSERID_STAGING')
+            buildConfigField "String", "USER_TOKEN", project.property('USER_TOKEN')
+            buildConfigField "String", "PASS_TOKEN", project.property('PASS_TOKEN')
+        }
+        production {
+            dimension "releaseType"
+            buildConfigField "String", "RETROFIT_OLIMPIA_URL", project.property('URL_OLIMPIA_PRO')
+            buildConfigField "String", "RETROFIT_RECONOSERID_URL", project.property('URL_RECONOSERID_PRO')
+            buildConfigField "String", "USER_TOKEN", project.property('USER_TOKEN')
+            buildConfigField "String", "PASS_TOKEN", project.property('PASS_TOKEN')
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        dataBinding true // for data binding
+        viewBinding true // for view binding
+    }
+
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.javaDirectories
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+dependencies {
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.zxing:core:3.4.0'
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = group_reconoserId
+version = library_version
+
+if (android.productFlavors.size() > 0) {
+    android.libraryVariants.all { variant ->
+
+        if (variant.name.toLowerCase().contains("debug")) {
+            return
+        }
+
+        def bundleTask = tasks["bundle${variant.name.capitalize()}Aar"]
+
+        artifacts {
+            archives(bundleTask.archivePath) {
+                classifier variant.flavorName
+                builtBy bundleTask
+                name = project.name
+            }
+        }
+    }
+}

@@ -1,0 +1,185 @@
+<resources>
+    <string name="app_name">ReconoSerSDK</string>
+
+    <string name="button_allow">Allow</string>
+    <string name="button_deny">Deny</string>
+
+    <string name="permission_camera_rationale">Camera permission is needed to show the camera preview.</string>
+    <string name="permission_camera_denied">Camera permission was denied. Please consider granting it in order to access the camera!</string>
+    <string name="permission_camera_never_ask_again">Camera permission was denied with never ask again.</string>
+    <string name="permissions_needed_guide">Para continuar se deben activar los permisos necesarios en los ajustes del sistema para la aplicación.</string>
+
+    <string name="camera_document_txt_title_front">Documento Frontal</string>
+    <string name="camera_document_txt_msg_front">Ajusta el documento para que ocupe todo el espacio dentro de la máscara, los datos y la foto deben verse claramente.</string>
+
+    <string name="camera_document_txt_title_back">Documento Posterior</string>
+    <string name="camera_document_txt_msg_back">Ajusta el documento para que ocupe todo el espacio dentro de la máscara, los datos deben verse claramente.</string>
+    <string name="remaining_time">Tiempo restante: </string>
+    <string name="loading_saving">Guardando datos</string>
+    <string name="camera_process">Procesando la imagen</string>
+    <string name="question_security">Preguntas de seguridad</string>
+    <string name="send_data">Enviando datos</string>
+    <string name="save_answer">Guardando</string>
+    <string name="gd_document_title">Ajusta el documento dentro de la máscara</string>
+    <string name="search_document_multiple_faces">Se han detectado varios rostros</string>
+
+
+    <!-- Strings for camera settings. -->
+    <string name="pref_category_key_camera" translatable="false">pckc</string>
+    <string name="pref_category_title_camera">Camera</string>
+    <string name="pref_key_rear_camera_preview_size" translatable="false">rcpvs</string>
+    <string name="pref_key_rear_camera_picture_size" translatable="false">rcpts</string>
+    <string name="pref_key_front_camera_preview_size" translatable="false">fcpvs</string>
+    <string name="pref_key_front_camera_picture_size" translatable="false">fcpts</string>
+    <string name="pref_key_camera_live_viewport" translatable="false">clv</string>
+    <string name="pref_title_rear_camera_preview_size">Rear camera preview size</string>
+    <string name="pref_title_front_camera_preview_size">Front camera preview size</string>
+    <string name="pref_title_camera_live_viewport">Enable live viewport</string>
+    <string name="pref_summary_camera_live_viewport">Do not block camera preview drawing on detection</string>
+
+    <!-- Strings for LivePreviewActivity -->
+    <string name="live_preview_time_out">00:00</string>
+
+
+    <string-array name="months">
+        <item>ENE</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>ABR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AGO</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DIC</item>
+    </string-array>
+
+    <string-array name="genders">
+        <item>M</item>
+        <item>F</item>
+        <item>T</item>
+    </string-array>
+
+    <string-array name="number_months">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="colombian_repeatedly_cc_observe_words">
+        <item>REPUBLICA DE COLOMBIA</item>
+        <item>CEDULA DE CIUDADANIA</item>
+        <item>NUMERO</item>
+        <item>APELLIDOS</item>
+    </string-array>
+
+    <string-array name="colombian_repeatedly_cc_reverse_words">
+        <item>FECHA DE NACIMIENTO</item>
+        <item>LUGAR DE NACIMIENTO</item>
+        <item>FECHA_EXPEDICION</item>
+        <item>SEXO</item>
+    </string-array>
+
+    <string-array name="kind_of_blood">
+        <item>AB-</item>
+        <item>AB+</item>
+        <item>B-</item>
+        <item>B+</item>
+        <item>A-</item>
+        <item>A+</item>
+        <item>O-</item>
+        <item>O+</item>
+    </string-array>
+
+    <string-array name="ecuadorian_repeatedly_obverse_words">
+        <item>REPUBLICA DEL ECUADOR</item>
+        <item>DIRECCION GENERAL DE REGISTRO CIVIL</item>
+        <item>IDENTIFICACION Y CEDULACION</item>
+        <item>APELLIDOS Y NOMBRES</item>
+        <item>SEXO</item>
+    </string-array>
+
+    <string-array name="ecuadorian_repeatedly_reverse_words">
+        <item>INSTRUCCION</item>
+        <item>LUGAR Y FECHA DE EXPEDICION</item>
+        <item>FECHA DE EXPIRACION</item>
+    </string-array>
+
+    <string-array name="colombian_repeatedly_ccd_observe_words">
+        <item>REPUBLICA DE COLOMBIA</item>
+        <item>CEDULA DE CIUDADANIA</item>
+        <item>NUIP</item>
+        <item>APELLIDOS</item>
+    </string-array>
+
+    <string-array name="colombian_repeatedly_ccd_reverse_words">
+        <item>.CO</item>
+        <item>.C0</item>
+        <item>REGISTRADOR NACIONAL</item>
+    </string-array>
+
+    <string-array name="country_custaclan">
+        <item>EL SALVADOR</item>
+        <item>HONDURAS</item>
+        <item>GUATEMALA</item>
+        <item>COSTARRICA</item>
+        <item>COLOMBIA</item>
+        <item>PANAMÁ</item>
+    </string-array>
+
+    <string-array name="validate_general_document_chilean">
+        <item>CIP</item>
+    </string-array>
+
+    <string-array name="validate_general_document_colombian">
+        <item>CC</item>
+        <item>TI</item>
+        <item>CE</item>
+        <item>CCD</item>
+    </string-array>
+
+    <string-array name="validate_general_document_costa_rican">
+        <item>CI</item>
+        <item>PP</item>
+    </string-array>
+
+    <string-array name="validate_general_document_ecuadorian">
+        <item>CCE</item>
+    </string-array>
+
+    <string-array name="validate_general_document_el_salvador">
+        <item>DNIP</item>
+    </string-array>
+
+    <string-array name="validate_general_document_guatemalan">
+        <item>DPI</item>
+    </string-array>
+
+    <string-array name="validate_general_document_honduras">
+        <item>DNIH</item>
+    </string-array>
+
+    <string-array name="validate_general_document_mexican">
+        <item>CURP</item>
+    </string-array>
+
+    <string-array name="validate_general_document_panamanian">
+        <item>CIPP</item>
+    </string-array>
+
+    <string-array name="validate_general_document_peruvian">
+        <item>DNIP</item>
+    </string-array>
+
+</resources>

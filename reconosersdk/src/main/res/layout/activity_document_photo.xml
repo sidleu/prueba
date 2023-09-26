@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data></data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fireTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        android:fitsSystemWindows="true"
+        android:keepScreenOn="true"
+        tools:context=".ui.document.views.DocumentAdActivity"
+        tools:ignore="MissingDefaultResource">
+
+        <com.reconosersdk.reconosersdk.optimizedCamera.CameraSourcePreview
+            android:id="@+id/firePreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineDoc">
+
+            <com.reconosersdk.reconosersdk.optimizedCamera.GraphicOverlay
+                android:id="@+id/fireFaceOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true" />
+
+            <ImageView
+                android:id="@+id/img_mask"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/mask43solid"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </com.reconosersdk.reconosersdk.optimizedCamera.CameraSourcePreview>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineDoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.85"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextBold.White18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:gravity="bottom|center"
+            android:paddingStart="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_40"
+            android:paddingEnd="@dimen/dp_15"
+            android:textAlignment="center"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/TextRegular.White16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:gravity="bottom|center"
+            android:paddingStart="@dimen/dp_15"
+            android:paddingBottom="@dimen/dp_15"
+            android:paddingEnd="@dimen/dp_15"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            style="@style/TextBold.White15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlack"
+            android:gravity="center|top"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:paddingStart="@dimen/dp_15"
+            android:paddingEnd="@dimen/dp_15"
+            android:text="@string/camera_document_txt_msg_front"
+            app:layout_constraintTop_toTopOf="@+id/guidelineDoc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_take"
+            style="@style/TextBold.White12"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/guidelineDoc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_max_faces"
+            style="@style/TextBold.White15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:gravity="center"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:text="@string/search_document_multiple_faces"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/guidelineDoc"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

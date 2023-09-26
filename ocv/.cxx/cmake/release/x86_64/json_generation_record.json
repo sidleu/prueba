@@ -1,0 +1,152 @@
+[
+  {
+    "level": "INFO",
+    "message": "Start JSON generation. Platform version: 21 min SDK version: x86_64",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "No CMake version was specified in build.gradle. Using default version 3.10.2.",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Trying to locate CMake in local SDK repository.",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/build-tools/23.0.3/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/build-tools/27.0.3/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/build-tools/28.0.3/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/build-tools/29.0.1/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/build-tools/29.0.2/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/build-tools/29.0.3/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/cmake/3.10.2.4988404/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/emulator/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/extras/intel/Hardware_Accelerated_Execution_Manager/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/ndk/20.0.5594570/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/patcher/v4/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/platform-tools/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/platforms/android-23/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/platforms/android-26/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/platforms/android-28/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/platforms/android-29/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/sources/android-28/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/sources/android-29/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Parsing /Users/camiloparra/Library/Android/sdk/tools/package.xml",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "- CMake found in SDK at \u0027/Users/camiloparra/Library/Android/sdk/cmake/3.10.2.4988404\u0027 had version \u00273.10.2\u0027",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON \u0027/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/.cxx/cmake/release/x86_64/android_gradle_build.json\u0027 was up-to-date",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "JSON generation completed without problems",
+    "file": "/Users/camiloparra/Documents/Proyectos/sdk_android/ocv/libcxx_helper/CMakeLists.txt",
+    "tag": "release|x86_64"
+  }
+]

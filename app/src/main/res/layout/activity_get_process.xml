@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white"
+    tools:context=".GetProcessActivity">
+
+    <TextView
+        android:id="@+id/textViewProcess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:background="@color/light_gray"
+        android:scrollbars="vertical"
+        android:text="Verificar servicio"
+        android:fontFamily="@font/brown_light"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineProcess" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineProcess"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_guidCv"
+                    style="@style/Title.Text"
+                    android:text="Nombre Asesor" />
+
+                <EditText
+                    android:id="@+id/etx_guidCv"
+                    style="@style/Edit.Sdk"
+                    android:text="D3338EE4-4567-4DEC-8805-DEB9B8CF9F90" />
+
+                <TextView
+                    android:id="@+id/tv_nombre"
+                    style="@style/Title.Text"
+                    android:text="Contraseña" />
+
+                <EditText
+                    android:id="@+id/etx_nombre"
+                    style="@style/Edit.Sdk"
+                    android:text="12345" />
+
+                <TextView
+                    android:id="@+id/tv_sede"
+                    style="@style/Title.Text"
+                    android:text="NumDoc" />
+
+                <Spinner
+                    android:id="@+id/spinnerHelper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etx_sede"
+                    style="@style/Edit.Sdk"
+                    android:text="94060904" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear_process"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_CodCliente"
+                        style="@style/Title.Text"
+                        android:text="Codigo Cliente" />
+
+                    <EditText
+                        android:id="@+id/etx_CodCliente"
+                        style="@style/Edit.Sdk"
+                        android:inputType="number"
+                        android:hint="Codigo del cliente"
+                        android:text="12345" />
+
+                    <TextView
+                        android:id="@+id/tv_numDoc"
+                        style="@style/Title.Text"
+                        android:text="Numero documento" />
+
+                    <EditText
+                        android:id="@+id/etx_numDoc"
+                        style="@style/Edit.Sdk"
+                        android:inputType="number"
+                        android:hint="123456789" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        style="@style/Title.Text"
+                        android:text="Correo electronico" />
+
+                    <EditText
+                        android:id="@+id/etx_email"
+                        style="@style/Edit.Sdk"
+                        android:inputType="textEmailAddress"
+                        android:hint="example@exp.com" />
+
+                    <TextView
+                        android:id="@+id/tv_cellPhone"
+                        style="@style/Title.Text"
+                        android:text="Celular" />
+
+                    <EditText
+                        android:id="@+id/etx_cellPhone"
+                        style="@style/Edit.Sdk"
+                        android:inputType="phone"
+                        android:hint="312000000" />
+
+                    <TextView
+                        android:id="@+id/tv_prefix_country"
+                        style="@style/Title.Text"
+                        android:text="Prefijo País" />
+
+                    <EditText
+                        android:id="@+id/etx_prefix_country"
+                        style="@style/Edit.Sdk"
+                        android:inputType="number"
+                        android:hint="57" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        style="@style/Title.Text"
+                        android:text="Estado" />
+
+                    <EditText
+                        android:id="@+id/etx_state"
+                        style="@style/Edit.Sdk"
+                        android:inputType="number"
+                        android:hint="1" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <Button
+        android:id="@+id/buttonProcess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/gray_button"
+        android:fontFamily="@font/font_regular"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

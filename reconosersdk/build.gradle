@@ -1,0 +1,228 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+}
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven-publish'
+group = group_reconoserId
+
+/*// Because the components are created only during the afterEvaluate phase, you must
+// configure your publications using the afterEvaluate() lifecycle method.
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.github.reconoser'
+                artifactId = 'sdkfacial'
+                version = '1.0.1'
+            }
+        }
+    }
+}*/
+
+afterEvaluate {
+        publishing {
+            publications {
+                // Creates a Maven publication called "release".
+                release(MavenPublication) {
+                    // Applies the component for the release build variant.
+                    from components.findByName('release')
+                        //from components.release
+                    // You can then customize attributes of the publication as shown below.
+                    groupId = 'com.github.reconoser'
+                    artifactId = 'reconosersdk'
+                    version = library_version
+                }
+            }
+        }
+}
+
+
+ext {
+    dev = 'develop'
+    prod = 'production'
+    stangin = 'staging'
+}
+
+android {
+    compileSdkVersion 33
+  //  buildToolsVersion "33.0.1"
+
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 33
+        versionCode 11
+        versionName library_version
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    defaultPublishConfig "productionRelease"
+    // Specifies one flavor dimension.
+    flavorDimensions "releaseType"
+    productFlavors {
+        develop {
+            dimension "releaseType"
+           /* buildConfigField "String", "RETROFIT_URL", project.property('URL_DEV')*/
+            buildConfigField "String", "RETROFIT_OLIMPIA_URL", project.property('URL_OLIMPIA_DEV')
+            buildConfigField "String", "RETROFIT_RECONOSERID_URL", project.property('URL_RECONOSERID_DEV')
+            buildConfigField "String", "USER_TOKEN", project.property('USER_TOKEN')
+            buildConfigField "String", "PASS_TOKEN", project.property('PASS_TOKEN')
+        }
+        staging {
+            dimension 'releaseType'
+            /*buildConfigField "String", "RETROFIT_URL", project.property('URL_DEV')*/
+            buildConfigField "String", "RETROFIT_OLIMPIA_URL", project.property('URL_OLIMPIA_STAGING')
+            buildConfigField "String", "RETROFIT_RECONOSERID_URL", project.property('URL_RECONOSERID_STAGING')
+            buildConfigField "String", "USER_TOKEN", project.property('USER_TOKEN')
+            buildConfigField "String", "PASS_TOKEN", project.property('PASS_TOKEN')
+        }
+        production {
+            dimension "releaseType"
+           /* buildConfigField "String", "RETROFIT_URL", project.property('URL_PRO')*/
+            buildConfigField "String", "RETROFIT_OLIMPIA_URL", project.property('URL_OLIMPIA_PRO')
+            buildConfigField "String", "RETROFIT_RECONOSERID_URL", project.property('URL_RECONOSERID_PRO')
+            buildConfigField "String", "USER_TOKEN", project.property('USER_TOKEN')
+            buildConfigField "String", "PASS_TOKEN", project.property('PASS_TOKEN')
+        }
+    }
+
+    /* android.buildFeatures.dataBinding = true*/
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+}
+
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.javaDirectories
+}
+
+artifacts {
+    archives sourcesJar
+}
+
+apply plugin: 'com.google.gms.google-services'
+dependencies {
+    //implementation 'com.github.User:Repo:Version'
+
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(path: ':zxing_custom')
+
+    //OpenCV
+    //implementation 'com.github.zhu260824:OpenCV:4.3.0'
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.3.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // barcode
+    implementation 'com.google.mlkit:barcode-scanning:16.1.2'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:16.2.0'
+    implementation 'com.google.mlkit:face-detection:16.1.1'
+
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //Permission
+    implementation "com.github.permissions-dispatcher:permissionsdispatcher:4.9.2"
+    annotationProcessor "com.github.permissions-dispatcher:permissionsdispatcher-processor:4.9.2"
+
+    //Interactuación con APIs Rest
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+
+    //Parseo de JSON
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    //Logging HTTP
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    //eventBus
+    implementation 'org.greenrobot:eventbus:3.3.1'
+
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.12'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    //Dagger
+    implementation 'com.google.dagger:dagger:2.35.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.28'
+    implementation 'com.google.dagger:dagger-android-support:2.33'
+    implementation 'com.google.dagger:dagger-android:2.35.1'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.24'
+
+    implementation 'org.apache.commons:commons-lang3:3.6'
+
+    implementation 'id.zelory:compressor:2.1.1'
+
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-alpha01'
+    implementation "org.jetbrains.kotlin:kotlin-reflect"
+
+    //Timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //Permission
+    implementation 'com.karumi:dexter:6.2.2'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = group_reconoserId
+version = library_version
+
+if (android.productFlavors.size() > 0) {
+    android.libraryVariants.all { variant ->
+
+        if (variant.name.toLowerCase().contains("debug")) {
+            return
+        }
+
+        def bundleTask = tasks["bundle${variant.name.capitalize()}Aar"]
+
+        artifacts {
+            archives(bundleTask.archivePath) {
+                classifier variant.flavorName
+                builtBy bundleTask
+                name = project.name
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.firebase.firebase-perf'
+    id 'maven-publish'
+}
+
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven-publish'
+
+
+/*android {
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+}*/
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "com.reconosersdk"
+        minSdkVersion 22
+        targetSdkVersion 33
+        versionCode 3
+        versionName library_version
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        missingDimensionStrategy "releaseType", "develop", "staging", "production"
+        //add this line
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    defaultPublishConfig "productionRelease"
+    // Specifies one flavor dimension.
+    flavorDimensions "releaseType"
+    productFlavors {
+        develop {
+            dimension "releaseType"
+            buildConfigField "String", "RETROFIT_OLIMPIA_URL", project.property('URL_OLIMPIA_DEV')
+            buildConfigField "String", "RETROFIT_RECONOSERID_URL", project.property('URL_RECONOSERID_DEV')
+            buildConfigField "String", "USER_TOKEN", project.property('USER_TOKEN')
+            buildConfigField "String", "PASS_TOKEN", project.property('PASS_TOKEN')
+        }
+        staging {
+            dimension 'releaseType'
+            buildConfigField "String", "RETROFIT_OLIMPIA_URL", project.property('URL_OLIMPIA_STAGING')
+            buildConfigField "String", "RETROFIT_RECONOSERID_URL", project.property('URL_RECONOSERID_STAGING')
+            buildConfigField "String", "USER_TOKEN", project.property('USER_TOKEN')
+            buildConfigField "String", "PASS_TOKEN", project.property('PASS_TOKEN')
+        }
+        production {
+            dimension "releaseType"
+            buildConfigField "String", "RETROFIT_OLIMPIA_URL", project.property('URL_OLIMPIA_PRO')
+            buildConfigField "String", "RETROFIT_RECONOSERID_URL", project.property('URL_RECONOSERID_PRO')
+            buildConfigField "String", "USER_TOKEN", project.property('USER_TOKEN')
+            buildConfigField "String", "PASS_TOKEN", project.property('PASS_TOKEN')
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        dataBinding true // for data binding
+        viewBinding true // for view binding
+    }
+
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+configurations.all {
+    resolutionStrategy.preferProjectModules()
+}
+
+dependencies {
+    implementation project(":reconosersdk")
+    implementation project(":zxing_custom")
+
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'com.google.android.material:material:1.3.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'com.google.firebase:firebase-core:17.4.4'
+    // Add the Firebase Crashlytics SDK.
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.1'
+    implementation 'com.google.firebase:firebase-perf:19.0.8'
+
+    //Interactuación con APIs Rest
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+
+    //Parseo de JSON
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    //Logging HTTP
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //Timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //Permission
+    implementation 'com.karumi:dexter:6.2.2'
+
+    //Interactuación con APIs Rest
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+
+    //eventBus
+    implementation 'org.greenrobot:eventbus:3.3.1'
+
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.12'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+    //Dagger
+    implementation 'com.google.dagger:dagger:2.35.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.28'
+    implementation 'com.google.dagger:dagger-android-support:2.33'
+    implementation 'com.google.dagger:dagger-android:2.35.1'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.24'
+
+    implementation 'org.apache.commons:commons-lang3:3.6'
+
+    implementation 'id.zelory:compressor:2.1.1'
+
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-alpha01'
+    implementation "org.jetbrains.kotlin:kotlin-reflect"
+
+    //Country Picker
+    implementation 'com.hbb20:ccp:2.5.0'
+
+    //add these lines
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+}

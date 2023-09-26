@@ -1,0 +1,1 @@
+include ':app', ':reconosersdk', ':zxing_custom'

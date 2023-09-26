@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:keepScreenOn="true"
+    tools:context=".ui.document.views.GeneralDocumentActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <com.reconosersdk.reconosersdk.optimizedCamera.CameraSourcePreviewGD
+        android:id="@+id/camera_source_preview_gd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.reconosersdk.reconosersdk.optimizedCamera.GraphicOverlay
+            android:id="@+id/graphics_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+
+    </com.reconosersdk.reconosersdk.optimizedCamera.CameraSourcePreviewGD>
+
+    <ImageView
+        android:id="@+id/maskBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:contentDescription="TODO"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_document_landscape_long" />
+
+    <ImageButton
+        android:id="@+id/capture_button"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_marginRight="43dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="TODO"
+        android:src="@drawable/trigger"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/camera_source_preview_gd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_gd"
+        style="@style/TextRegular.White20"
+        android:layout_marginTop="20dp"
+        android:text="@string/gd_document_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/maskBackground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

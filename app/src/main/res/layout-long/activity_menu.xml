@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_space"
+    tools:context=".MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/containerLogo"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:background="@color/logo_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subtitle_container"
+                style="@style/subtitle_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/containerLogo">
+
+                <TextView
+                    style="@style/subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="SDK"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/button5"
+                style="@style/item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Biometría"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subtitle_container" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button5"/>
+
+            <TextView
+                android:id="@+id/button6"
+                style="@style/item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Servicios"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button6"/>
+
+            <TextView
+                android:id="@+id/btnPreguntas"
+                style="@style/item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Preguntas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnPreguntas"/>
+
+            <TextView
+                android:id="@+id/btnConsultas"
+                style="@style/item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Consultas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPreguntas" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnConsultas"/>
+
+            <TextView
+                android:id="@+id/btnComparete"
+                style="@style/item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Comparación"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnConsultas" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnComparete"/>
+
+            <TextView
+                android:id="@+id/btnOpenSources"
+                style="@style/item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Fuentes Abiertas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnComparete" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnOpenSources"/>
+
+
+            <TextView
+                android:id="@+id/btnValidateDocument"
+                style="@style/item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Documento vs Fuentes Abiertas"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnOpenSources" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnValidateDocument"/>
+
+            <TextView
+                android:id="@+id/btnExtraDocument"
+                style="@style/item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Documentos extras"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnValidateDocument" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnExtraDocument"/>
+
+            <TextView
+                android:id="@+id/btnRequestValidation"
+                style="@style/item"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Solicitud y Validación"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnExtraDocument" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="16dp"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnRequestValidation"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Versión:"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="1.4.9-min16-alpha3"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

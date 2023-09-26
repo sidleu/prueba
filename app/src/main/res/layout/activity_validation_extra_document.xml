@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+
+<data/>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ValidationExtraDocumentActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/placeholder" />
+
+    <Spinner
+        android:id="@+id/spinnerExtraDocument"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline4" />
+
+    <ScrollView
+        android:id="@+id/nested_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerExtraDocument"
+        app:layout_constraintBottom_toTopOf="@id/txtResult">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4">
+
+            <LinearLayout
+                android:id="@+id/containerEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txtGuidProcesoConvenio"
+                    style="@style/Title.Text"
+                    android:text="GuidProcesoConvenio" />
+
+                <EditText
+                    android:id="@+id/etGuidProcesoConvenio"
+                    style="@style/Edit.Sdk"
+                    android:hint="Ingrese su guidProcesoConvenio" />
+
+                <TextView
+                    android:id="@+id/txtFormat"
+                    style="@style/Title.Text"
+                    android:text="Formato" />
+
+                <EditText
+                    android:id="@+id/etFormat"
+                    style="@style/Edit.Sdk"
+                    android:text="JPG_B64"
+                    android:hint="Tipo de formato (PDF, JPG, PNG)"/>
+
+                <TextView
+                    android:id="@+id/txtUser"
+                    style="@style/Title.Text"
+                    android:text="Usuario" />
+
+                <EditText
+                    android:id="@+id/etUser"
+                    style="@style/Edit.Sdk"
+                    android:inputType="textEmailAddress"
+                    android:hint="correo electronico o usuario" />
+
+                <TextView
+                    android:id="@+id/txtIdService"
+                    style="@style/Title.Text"
+                    android:text="Id Servicio" />
+
+                <EditText
+                    android:id="@+id/etIdService"
+                    style="@style/Edit.Sdk"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Id del servicio" />
+
+                <TextView
+                    android:id="@+id/txtSubType"
+                    style="@style/Title.Text"
+                    android:text="SubTipo" />
+
+                <EditText
+                    android:id="@+id/etSubType"
+                    style="@style/Edit.Sdk"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:layout_marginBottom="20dp"
+                    android:hint="SubTipo" />
+
+                <TextView
+                    android:id="@+id/txtNumLicencia"
+                    style="@style/Title.Text"
+                    android:text="Num Licencia" />
+
+                <EditText
+                    android:id="@+id/etNumLicencia"
+                    style="@style/Edit.Sdk"
+                    android:ems="20"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Num Licencia" />
+
+                <TextView
+                    android:id="@+id/txtNumMedPreventiva"
+                    style="@style/Title.Text"
+                    android:text="Num Med Preventiva" />
+
+                <EditText
+                    android:id="@+id/etNumMedPreventiva"
+                    style="@style/Edit.Sdk"
+                    android:ems="20"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Num Med Preventiva" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_gray"
+        android:fontFamily="@font/brown_light"
+        android:padding="14dp"
+        android:scrollbars="vertical"
+        android:text="Result"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnPhoto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nested_main" />
+
+    <Button
+        android:id="@+id/btnPhoto1"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gray_button"
+        android:fontFamily="@font/font_regular"
+        android:text="Capturar Documento"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCompare"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCompare"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gray_button"
+        android:fontFamily="@font/font_regular"
+        android:text="Validar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPhoto1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

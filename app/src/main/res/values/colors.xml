@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000D1C</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#E1077B</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="brown_grey">#858585</color>
+    <color name="greyish_brown">#3f3f3f</color>
+    <color name="ic_back_color">#dddddd</color>
+    <color name="light_gray">#19b7b7b7</color>
+
+    <color name="logo_background">#000D1C</color>
+    <color name="gray_subtitle">#EDF1F5</color>
+    <color name="gray_space">#EDF1F5</color>
+    <color name="subtitle_font">#8E9398</color>
+
+    <color name="color_title">#3F3F3F</color>
+    <color name="color_data">#363944</color>
+    <color name="color_button_blue">#1CA1E2</color>
+    <color name="color_button_gray">#9EA5AC</color>
+    <color name="color_inactive_switch">#f1f1f1</color>
+    <color name="yellow_bulb">#EDED26</color>
+    <color name="color_transparent">#42221f1f</color>
+
+
+</resources>

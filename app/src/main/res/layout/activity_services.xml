@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true"
+        tools:context=".ServicesActivity">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:background="@color/light_gray"
+            android:fontFamily="@font/brown_light"
+            android:padding="16dp"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toTopOf="@+id/button7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/Title.Text"
+                    android:text="GuidConv" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    style="@style/Edit.Sdk"
+                    android:text="D3338EE4-4567-4DEC-8805-DEB9B8CF9F90" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/Title.Text"
+                    android:text="Datos" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    style="@style/Edit.Sdk"
+                    android:text="XX" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/Title.Text"
+                    android:text="NumDoc" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    style="@style/Edit.Sdk"
+                    android:text="94060904" />
+
+                <LinearLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/Title.Text"
+                        android:text="Email" />
+
+                    <EditText
+                        android:id="@+id/editText4"
+                        style="@style/Edit.Sdk"
+                        android:text="cc2029517@gmail.com" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/Title.Text"
+                        android:text="Celular" />
+
+                    <EditText
+                        android:id="@+id/editText5"
+                        style="@style/Edit.Sdk"
+                        android:text="3187348993" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        style="@style/Title.Text"
+                        android:text="DatosAdi" />
+
+                    <EditText
+                        android:id="@+id/editText6"
+                        style="@style/Edit.Sdk" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        style="@style/Title.Text"
+                        android:text="DatosAdi" />
+
+                    <EditText
+                        android:id="@+id/editText7"
+                        style="@style/Edit.Sdk" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        style="@style/Title.Text"
+                        android:text="DatosAdi" />
+
+                    <EditText
+                        android:id="@+id/editText8"
+                        style="@style/Edit.Sdk" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/gray_button"
+            android:fontFamily="@font/font_regular"
+            android:text="Aceptar"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+
+

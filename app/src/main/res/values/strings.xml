@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">ReconoSerSDK</string>
+    <string name="textView1">Introduce cuantos movimientos deseas validar:</string>
+    <string name="textView2">Introduce cuantos intentos deseas realizar:</string>
+    <string name="textView3">Tiempo de cada gesto:</string>
+    <string name="loading">Cargando</string>
+
+    <string-array name="selected_process">
+        <item>AUTENTICAR ASESOR</item>
+        <item>SOLICITUD PROCESO</item>
+        <item>PROCESOS PENDIENTES</item>
+        <item>CANCELAR PROCESO</item>
+        <item>MOTIVOS CANCELADO</item>
+        <item>SEDE CONVENIO</item>
+        <item>CONSULTAR ESTADO PROCESO</item>
+        <item>CONSULTAR PROCESO</item>
+    </string-array>
+
+    <string-array name="selected_motivation">
+        <item>No Interesado</item>
+        <item>No soportado</item>
+    </string-array>
+
+    <string-array name="open_sources_options">
+        <item>SOLICITUD FUENTES ABIERTAS</item>
+        <item>CONSULTAR FUENTES ABIERTAS</item>
+        <item>LISTAS FUENTES ABIERTAS</item>
+    </string-array>
+
+    <string-array name="validate_document_options">
+        <item>Validar Recibo</item>
+        <item>Validar Licencia Conduccion</item>
+        <item>Validar LicFederal Conducción</item>
+        <item>Ip y GSP</item>
+    </string-array>
+
+    <string-array name="validate_general_document">
+        <item>CURP</item>
+        <item>DNIP</item>
+    </string-array>
+
+    <string-array name="service_validation_options">
+        <item>SOLICITUD VALIDACION</item>
+        <item>CONSULTAR PASOS</item>
+        <item>GUARDAR AMBAS CARAS</item>
+        <item>CONSULTAR VALIDACION</item>
+        <item>BLACK_BOX</item>
+        <item>LOGIN</item>
+        <item>OBTENER DATA EASYTRACK</item>
+        <item>ACEPTAR ATDP</item>
+    </string-array>
+
+</resources>

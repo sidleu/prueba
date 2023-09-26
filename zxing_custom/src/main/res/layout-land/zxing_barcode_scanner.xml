@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.cetoco.zxing_android_embedded_custom.journeyapps.barcodescanner.BarcodeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zxing_barcode_surface"/>
+
+    <com.cetoco.zxing_android_embedded_custom.journeyapps.barcodescanner.ViewfinderView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zxing_viewfinder_view"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_barcode_default_long"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/zxing_status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:background="@color/zxing_transparent"
+        android:text="@string/zxing_msg_default_status"
+        android:layout_marginTop="45dp"
+        android:textSize="22sp"
+        android:textColor="@color/zxing_status_text" />
+
+    <TextView
+        android:id="@+id/zxing_status_subview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:background="@color/zxing_transparent"
+        android:text="@string/zxing_sub_msg_default_status"
+        android:textSize="16sp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/zxing_status_view"
+        android:textColor="@color/zxing_status_text"/>
+</merge>

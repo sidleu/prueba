@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">#d50000</item>
+        <item name="colorAccent">#f44336</item>
+        <item name="android:immersive">true</item>
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="AppThemeCustom" parent="ThemeOverlay.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="android:layout_height">56dp</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="Toolbar.TitleTextColl" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/opensans_bold</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="custom_radio_buttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dp_32</item>
+        <item name="android:layout_marginTop">@dimen/dp_15</item>
+        <item name="android:layout_marginEnd">@dimen/dp_32</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextView" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Text.Bold" parent="TextView">  <!--bold-->
+        <item name="android:fontFamily">@font/opensans_bold</item>
+    </style>
+
+    <style name="Text.Regular" parent="TextView">  <!--regular-->
+        <item name="android:fontFamily">@font/opensans_regular</item>
+    </style>
+
+    <style name="TextRegular.White24" parent="Text.Regular">
+        <item name="android:textSize">@dimen/text_dim_24</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextRegular.White22" parent="Text.Regular">
+        <item name="android:textSize">@dimen/text_dim_22</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextRegular.White20" parent="Text.Regular">
+        <item name="android:textSize">@dimen/text_dim_20</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextBold.White24" parent="Text.Bold">
+        <item name="android:textSize">@dimen/text_dim_24</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextBold.White20" parent="Text.Bold">
+        <item name="android:textSize">@dimen/text_dim_20</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    
+    <style name="TextBold.White18" parent="Text.Bold">
+        <item name="android:textSize">@dimen/text_dim_18</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextBold.White15" parent="Text.Bold">
+        <item name="android:textSize">@dimen/text_dim_15</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextBold.White12" parent="Text.Bold">
+        <item name="android:textSize">@dimen/text_dim_12</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ReconoSerSDK.Font.Input" parent="TextView">
+        <item name="android:textSize">@dimen/text_dim_16</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="ReconoSerSDK.Font.Instruction" parent="TextView">
+        <item name="android:textSize">@dimen/text_dim_24</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="ReconoSerSDK.Font.Time" parent="TextView">
+        <item name="android:textSize">@dimen/text_dim_14</item>
+    </style>
+
+    <style name="TextRegular.Grey15" parent="Text.Regular">
+        <item name="android:textSize">@dimen/text_dim_15</item>
+        <item name="android:textColor">@color/greyish_brown</item>
+        <item name="android:layout_marginStart">@dimen/margin14</item>
+        <item name="android:layout_marginEnd">@dimen/margin14</item>
+    </style>
+
+    <style name="TextBold.Red14" parent="Text.Bold">
+        <item name="android:textSize">@dimen/text_dim_14</item>
+        <item name="android:layout_marginStart">@dimen/margin14</item>
+        <item name="android:layout_marginEnd">@dimen/margin14</item>
+        <item name="android:textColor">@color/cherry_red</item>
+    </style>
+
+    <style name="TextRegular.White16" parent="Text.Regular">
+        <item name="android:textSize">@dimen/text_dim_16</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- Buttons Style -->
+    <style name="Custom.Button" parent="Base.TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/background_button_round_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_dim_16</item>
+    </style>
+
+    <style name="Textlight.HintText16" parent="TextView">
+        <item name="android:textSize">@dimen/text_dim_16</item>
+        <item name="android:textColor">@color/gray_hint</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:padding">@dimen/dp_10</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Custom.Button.Normal" parent="Custom.Button">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/margin_14</item>
+        <item name="android:layout_marginStart">@dimen/margin_14</item>
+        <item name="android:layout_marginEnd">@dimen/margin_14</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="CustomProgressBarTheme">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+</resources>

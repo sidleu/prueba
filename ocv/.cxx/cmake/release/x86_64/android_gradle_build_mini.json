@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "C:\\Users\\jmdar\\AppData\\Local\\Android\\Sdk\\ndk\\20.0.5594570\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\jmdar\\AppData\\Local\\Android\\Sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake",
+    "H:\\proyectos2018\\sdk\\ocv\\libcxx_helper\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\jmdar\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"H:\\proyectos2018\\sdk\\ocv\\.cxx\\cmake\\release\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\jmdar\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"H:\\proyectos2018\\sdk\\ocv\\.cxx\\cmake\\release\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "opencv_jni_shared-Release-x86_64": {
+      "artifactName": "opencv_jni_shared",
+      "buildCommand": "C:\\Users\\jmdar\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"H:\\proyectos2018\\sdk\\ocv\\.cxx\\cmake\\release\\x86_64\" opencv_jni_shared",
+      "abi": "x86_64",
+      "output": "H:\\proyectos2018\\sdk\\ocv\\.cxx\\cmake\\release\\x86_64\\libopencv_jni_shared.a"
+    }
+  }
+}
