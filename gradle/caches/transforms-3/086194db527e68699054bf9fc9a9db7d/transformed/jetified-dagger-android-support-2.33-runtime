@@ -1,0 +1,12 @@
+dagger.android.support.AndroidSupportInjection
+dagger.android.support.AndroidSupportInjectionModule
+dagger.android.support.DaggerAppCompatActivity
+dagger.android.support.DaggerAppCompatActivity_MembersInjector
+dagger.android.support.DaggerAppCompatDialogFragment
+dagger.android.support.DaggerAppCompatDialogFragment_MembersInjector
+dagger.android.support.DaggerApplication
+dagger.android.support.DaggerDialogFragment
+dagger.android.support.DaggerDialogFragment_MembersInjector
+dagger.android.support.DaggerFragment
+dagger.android.support.DaggerFragment_MembersInjector
+dagger.android.support.package-info

@@ -1,0 +1,89 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.hbb20",
+    "module": "ccp",
+    "version": "2.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "qomwlliowvhl5n7qkxtpvuleri"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ccp-2.5.0.aar",
+          "url": "ccp-2.5.0.aar",
+          "size": 536807,
+          "sha512": "46fd2c5d9c6bed354101e055b131d3485df4cc39bae1f5b5729531044e73db0ace3593e7dfd1cbca1a32a8d673f28d5a55a59b6d27025f322fbcee312b5ff852",
+          "sha256": "869cdb8bfdbcdc90472992353758a0d994f12ab02e270a9da74335ca248d6c07",
+          "sha1": "9b319055bf9cabe3d5aa2eb55ab4a54153a97a86",
+          "md5": "7c4001c7973f6166bc2e09c743b14117"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.recyclerview",
+          "module": "recyclerview",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "io.michaelrocks",
+          "module": "libphonenumber-android",
+          "version": {
+            "requires": "8.12.19-2"
+          }
+        },
+        {
+          "group": "androidx.cardview",
+          "module": "cardview",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ccp-2.5.0.aar",
+          "url": "ccp-2.5.0.aar",
+          "size": 536807,
+          "sha512": "46fd2c5d9c6bed354101e055b131d3485df4cc39bae1f5b5729531044e73db0ace3593e7dfd1cbca1a32a8d673f28d5a55a59b6d27025f322fbcee312b5ff852",
+          "sha256": "869cdb8bfdbcdc90472992353758a0d994f12ab02e270a9da74335ca248d6c07",
+          "sha1": "9b319055bf9cabe3d5aa2eb55ab4a54153a97a86",
+          "md5": "7c4001c7973f6166bc2e09c743b14117"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.squareup.okhttp3",
+    "module": "logging-interceptor",
+    "version": "4.9.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5",
+      "buildId": "ewnqysochzbgzbqmeiq4u3fhha"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "logging-interceptor-4.9.0.jar",
+          "url": "logging-interceptor-4.9.0.jar",
+          "size": 15680,
+          "sha512": "e4ccf6c9ef793eb88b7a8edef8639ea8bc177028dbb0f9a77cd0f6767498487c4a9f806f66a74b5adfc74204744f99e32d35d2b43e48891b58f892bc58866814",
+          "sha256": "b5848794b6a9cb74b87dac847e05e2de232be35c2a682e1704f65d57b1042fb6",
+          "sha1": "00f9ce50fc73074fc4e7bde6e177e8bb4792045e",
+          "md5": "4a57c83030f49f408a45bb6e29566dae"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "logging-interceptor-4.9.0.jar",
+          "url": "logging-interceptor-4.9.0.jar",
+          "size": 15680,
+          "sha512": "e4ccf6c9ef793eb88b7a8edef8639ea8bc177028dbb0f9a77cd0f6767498487c4a9f806f66a74b5adfc74204744f99e32d35d2b43e48891b58f892bc58866814",
+          "sha256": "b5848794b6a9cb74b87dac847e05e2de232be35c2a682e1704f65d57b1042fb6",
+          "sha1": "00f9ce50fc73074fc4e7bde6e177e8bb4792045e",
+          "md5": "4a57c83030f49f408a45bb6e29566dae"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "logging-interceptor-4.9.0-javadoc.jar",
+          "url": "logging-interceptor-4.9.0-javadoc.jar",
+          "size": 261,
+          "sha512": "baf166fcf5944c73af55830fc4be2a6390b818b26d862a1e13558bb2e325c2c3ee2c9221d48a93f9f1a7538805c918297eeb53b0c72856d761b8f832e1bc24f3",
+          "sha256": "f9357d1966f1d00b4757488ddb57a4e2b47a5bc81ff1079b12a25824cc1dba66",
+          "sha1": "9ed1d5910feaefc5236358c32cd5c61139f66141",
+          "md5": "03b2b9ae001d7e2a382354f9523fe053"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "logging-interceptor-4.9.0-sources.jar",
+          "url": "logging-interceptor-4.9.0-sources.jar",
+          "size": 6003,
+          "sha512": "de0360b3533514037583e7f890079cd9226b7bb177616ee72485d8ad900ee9fe0ba14afcf229507b8cdfd796b0697d40d33d8de9b8f360d454c1c1a9c2d7522f",
+          "sha256": "8bb9edda8c804473f2a9d33b22409b64a5595d0485bd0e86eb6b44ec7fd878e2",
+          "sha1": "bea555dd31f2b5ccce67ec00247df86d91983265",
+          "md5": "6f7a39d9bfe006bb072e39776b1bcb1e"
+        }
+      ]
+    }
+  ]
+}

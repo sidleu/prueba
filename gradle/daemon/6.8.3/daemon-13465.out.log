@@ -1,0 +1,951 @@
+2023-09-26T17:19:07.935-0500 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [--add-opens, java.base/java.util=ALL-UNNAMED, --add-opens, java.base/java.lang=ALL-UNNAMED, --add-opens, java.base/java.lang.invoke=ALL-UNNAMED, --add-opens, java.prefs/java.util.prefs=ALL-UNNAMED, -Xmx1536m, -Dfile.encoding=UTF-8, -Duser.country=CO, -Duser.language=es, -Duser.variant]
+2023-09-26T17:19:08.138-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=7c680301-c599-4ebd-8e66-50cf4dbcd71b,javaHome=/Users/sleusson/Library/Java/JavaVirtualMachines/corretto-11.0.19/Contents/Home,daemonRegistryDir=/Users/sleusson/Documents/GitHub/prueba/gradle/daemon,pid=13465,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]
+2023-09-26T17:19:08.198-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun2
+2023-09-26T17:19:08.199-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-09-26T17:19:08.199-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:ce81:b1c:bd2c:69e%utun2
+2023-09-26T17:19:08.199-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun1
+2023-09-26T17:19:08.199-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-09-26T17:19:08.204-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:f67:55c9:e2d6:d4aa%utun1
+2023-09-26T17:19:08.204-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun0
+2023-09-26T17:19:08.204-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-09-26T17:19:08.205-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:209b:62dd:33a0:a33c%utun0
+2023-09-26T17:19:08.205-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface llw0
+2023-09-26T17:19:08.205-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-09-26T17:19:08.206-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:98d3:1eff:fe6a:3a2b%llw0
+2023-09-26T17:19:08.206-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface awdl0
+2023-09-26T17:19:08.206-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-09-26T17:19:08.207-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:98d3:1eff:fe6a:3a2b%awdl0
+2023-09-26T17:19:08.207-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface en6
+2023-09-26T17:19:08.207-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-09-26T17:19:08.207-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:aede:48ff:fe00:1122%en6
+2023-09-26T17:19:08.208-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface en0
+2023-09-26T17:19:08.208-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-09-26T17:19:08.208-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:47:e603:f64b:1cfb%en0
+2023-09-26T17:19:08.208-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.101.19
+2023-09-26T17:19:08.209-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo0
+2023-09-26T17:19:08.209-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2023-09-26T17:19:08.209-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Ignoring remote address on loopback interface /fe80:0:0:0:0:0:0:1%lo0
+2023-09-26T17:19:08.210-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo0
+2023-09-26T17:19:08.210-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2023-09-26T17:19:08.214-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]].
+2023-09-26T17:19:08.226-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Tue Sep 26 17:19:08 COT 2023, with address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:19:08.227-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:19:08.227-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=7c680301-c599-4ebd-8e66-50cf4dbcd71b,javaHome=/Users/sleusson/Library/Java/JavaVirtualMachines/corretto-11.0.19/Contents/Home,daemonRegistryDir=/Users/sleusson/Documents/GitHub/prueba/gradle/daemon,pid=13465,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]
+2023-09-26T17:19:08.229-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=7c680301-c599-4ebd-8e66-50cf4dbcd71b,javaHome=/Users/sleusson/Library/Java/JavaVirtualMachines/corretto-11.0.19/Contents/Home,daemonRegistryDir=/Users/sleusson/Documents/GitHub/prueba/gradle/daemon,pid=13465,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]
+2023-09-26T17:19:08.239-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:19:08.241-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:19:08.245-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:19:08.245-0500 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2023-09-26T17:19:08.246-0500 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2023-09-26T17:19:08.259-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55356 to /127.0.0.1:55355.
+2023-09-26T17:19:08.266-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2023-09-26T17:19:08.268-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2023-09-26T17:19:08.269-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:19:08.341-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.Build
+2023-09-26T17:19:08.342-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received non-IO message from client: Build{id=df05a8d7-509c-41bf-94dd-c586d6f8fd41, currentDir=/Users/sleusson/Documents/GitHub/prueba}
+2023-09-26T17:19:08.342-0500 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=df05a8d7-509c-41bf-94dd-c586d6f8fd41, currentDir=/Users/sleusson/Documents/GitHub/prueba}.
+2023-09-26T17:19:08.343-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=df05a8d7-509c-41bf-94dd-c586d6f8fd41, currentDir=/Users/sleusson/Documents/GitHub/prueba} with connection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55356.
+2023-09-26T17:19:08.346-0500 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=df05a8d7-509c-41bf-94dd-c586d6f8fd41, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55356] after 0.0 minutes of idle
+2023-09-26T17:19:08.346-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:19:08.346-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:19:08.347-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:19:08.348-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:19:08.349-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:19:08.349-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-09-26T17:19:08.350-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:19:08.350-0500 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=df05a8d7-509c-41bf-94dd-c586d6f8fd41, currentDir=/Users/sleusson/Documents/GitHub/prueba}. Dispatching build started information...
+2023-09-26T17:19:08.351-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@6db8b6b3
+2023-09-26T17:19:08.354-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, __CFBundleIdentifier, SHELL, OLDPWD, USER, COMMAND_MODE, TMPDIR, SSH_AUTH_SOCK, XPC_FLAGS, __CF_USER_TEXT_ENCODING, LOGNAME, LC_CTYPE, XPC_SERVICE_NAME, HOME]
+2023-09-26T17:19:08.354-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.CloseInput
+2023-09-26T17:19:08.355-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@3aed0805
+2023-09-26T17:19:08.360-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2023-09-26T17:19:08.360-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 13465). The daemon log file: /Users/sleusson/Documents/GitHub/prueba/gradle/daemon/6.8.3/daemon-13465.out.log
+2023-09-26T17:19:08.364-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 1.5 GiB]
+2023-09-26T17:19:08.365-0500 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+2023-09-26T17:19:08.366-0500 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+2023-09-26T17:19:08.370-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2023-09-26T17:19:08.370-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=7c680301-c599-4ebd-8e66-50cf4dbcd71b,javaHome=/Users/sleusson/Library/Java/JavaVirtualMachines/corretto-11.0.19/Contents/Home,daemonRegistryDir=/Users/sleusson/Documents/GitHub/prueba/gradle/daemon,pid=13465,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/03 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/03 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/03 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: elemento inesperado (URI:"", local:"extension-level"). Los elementos esperados son <{}codename>,<{}layoutlib>,<{}api-level>
+Warning: elemento inesperado (URI:"", local:"base-extension"). Los elementos esperados son <{}codename>,<{}layoutlib>,<{}api-level>
+
+BUILD SUCCESSFUL in 3m 56s
+2023-09-26T17:23:01.354-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2023-09-26T17:23:01.365-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:23:01.366-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=df05a8d7-509c-41bf-94dd-c586d6f8fd41, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55356]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@4921cb5a with state Busy
+2023-09-26T17:23:01.366-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=df05a8d7-509c-41bf-94dd-c586d6f8fd41, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55356]
+2023-09-26T17:23:01.366-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-09-26T17:23:01.366-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:23:01.367-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:23:01.367-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:23:01.367-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:01.368-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:01.369-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:23:01.369-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@2110aad7]
+2023-09-26T17:23:01.369-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@2110aad7]
+2023-09-26T17:23:01.369-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=df05a8d7-509c-41bf-94dd-c586d6f8fd41, currentDir=/Users/sleusson/Documents/GitHub/prueba}
+2023-09-26T17:23:01.463-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.Finished
+2023-09-26T17:23:01.463-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@46c7e875
+2023-09-26T17:23:01.463-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@46c7e875
+2023-09-26T17:23:01.463-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-09-26T17:23:01.464-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2023-09-26T17:23:01.464-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received null
+2023-09-26T17:23:01.464-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received end-of-input from client.
+2023-09-26T17:23:01.465-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-09-26T17:23:05.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:05.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:05.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:05.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:05.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:05.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:15.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:15.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:15.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:15.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:15.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:15.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:15.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:15.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:15.905-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:25.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:25.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:25.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:25.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:25.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:25.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:25.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:25.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:25.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:34.588-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55466 to /127.0.0.1:55355.
+2023-09-26T17:23:34.601-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 180: received class org.gradle.launcher.daemon.protocol.Build
+2023-09-26T17:23:34.602-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 180: Received non-IO message from client: Build{id=a8b96d28-0f7e-4532-bfdf-4d77def0e43c, currentDir=/Users/sleusson/Documents/GitHub/prueba}
+2023-09-26T17:23:34.602-0500 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=a8b96d28-0f7e-4532-bfdf-4d77def0e43c, currentDir=/Users/sleusson/Documents/GitHub/prueba}.
+2023-09-26T17:23:34.602-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=a8b96d28-0f7e-4532-bfdf-4d77def0e43c, currentDir=/Users/sleusson/Documents/GitHub/prueba} with connection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55466.
+2023-09-26T17:23:34.602-0500 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=a8b96d28-0f7e-4532-bfdf-4d77def0e43c, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55466] after 0.0 minutes of idle
+2023-09-26T17:23:34.603-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:23:34.603-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:23:34.603-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:23:34.603-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:34.604-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:34.605-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-09-26T17:23:34.605-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:23:34.605-0500 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=a8b96d28-0f7e-4532-bfdf-4d77def0e43c, currentDir=/Users/sleusson/Documents/GitHub/prueba}. Dispatching build started information...
+2023-09-26T17:23:34.605-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@34a56431
+2023-09-26T17:23:34.606-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, __CFBundleIdentifier, SHELL, OLDPWD, USER, COMMAND_MODE, TMPDIR, SSH_AUTH_SOCK, XPC_FLAGS, __CF_USER_TEXT_ENCODING, LOGNAME, LC_CTYPE, XPC_SERVICE_NAME, HOME]
+2023-09-26T17:23:34.607-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2023-09-26T17:23:34.607-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 13465). The daemon log file: /Users/sleusson/Documents/GitHub/prueba/gradle/daemon/6.8.3/daemon-13465.out.log
+2023-09-26T17:23:34.607-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 180: received class org.gradle.launcher.daemon.protocol.CloseInput
+2023-09-26T17:23:34.607-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 180: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@3f94cb24
+2023-09-26T17:23:34.607-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 2nd build in daemon [uptime: 4 mins 19.002 secs, performance: 100%]
+2023-09-26T17:23:34.608-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2023-09-26T17:23:34.608-0500 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+2023-09-26T17:23:34.608-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=7c680301-c599-4ebd-8e66-50cf4dbcd71b,javaHome=/Users/sleusson/Library/Java/JavaVirtualMachines/corretto-11.0.19/Contents/Home,daemonRegistryDir=/Users/sleusson/Documents/GitHub/prueba/gradle/daemon,pid=13465,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]
+2023-09-26T17:23:34.608-0500 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+AGPBI: {"kind":"warning","text":"The option setting 'android.enableR8=true' is deprecated.\nIt will be removed in version 7.0 of the Android Gradle plugin.\nYou will no longer be able to disable R8","sources":[{}]}
+
+BUILD SUCCESSFUL in 911ms
+4 actionable tasks: 4 up-to-date
+2023-09-26T17:23:35.505-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2023-09-26T17:23:35.510-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:23:35.510-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=a8b96d28-0f7e-4532-bfdf-4d77def0e43c, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55466]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@4921cb5a with state Busy
+2023-09-26T17:23:35.510-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=a8b96d28-0f7e-4532-bfdf-4d77def0e43c, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55466]
+2023-09-26T17:23:35.510-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-09-26T17:23:35.510-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:23:35.510-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:23:35.511-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:23:35.511-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:35.511-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:35.512-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@32ae8d3]
+2023-09-26T17:23:35.512-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@32ae8d3]
+2023-09-26T17:23:35.512-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:23:35.512-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=a8b96d28-0f7e-4532-bfdf-4d77def0e43c, currentDir=/Users/sleusson/Documents/GitHub/prueba}
+2023-09-26T17:23:35.512-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 180: received class org.gradle.launcher.daemon.protocol.Finished
+2023-09-26T17:23:35.512-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 180: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@3e709885
+2023-09-26T17:23:35.513-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@3e709885
+2023-09-26T17:23:35.513-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2023-09-26T17:23:35.513-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-09-26T17:23:35.513-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 180: received null
+2023-09-26T17:23:35.513-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 180: Received end-of-input from client.
+2023-09-26T17:23:35.514-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-09-26T17:23:35.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:35.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:35.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:35.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:23:35.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:35.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:37.616-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55467 to /127.0.0.1:55355.
+2023-09-26T17:23:37.629-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 335: received class org.gradle.launcher.daemon.protocol.Build
+2023-09-26T17:23:37.630-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 335: Received non-IO message from client: Build{id=19f3962a-9ea2-427e-b75f-6ef29e80d91f, currentDir=/Users/sleusson/Documents/GitHub/prueba}
+2023-09-26T17:23:37.630-0500 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=19f3962a-9ea2-427e-b75f-6ef29e80d91f, currentDir=/Users/sleusson/Documents/GitHub/prueba}.
+2023-09-26T17:23:37.630-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=19f3962a-9ea2-427e-b75f-6ef29e80d91f, currentDir=/Users/sleusson/Documents/GitHub/prueba} with connection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55467.
+2023-09-26T17:23:37.630-0500 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=19f3962a-9ea2-427e-b75f-6ef29e80d91f, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55467] after 0.0 minutes of idle
+2023-09-26T17:23:37.631-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:23:37.631-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:23:37.631-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:23:37.631-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:23:37.632-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:23:37.633-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-09-26T17:23:37.633-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:23:37.633-0500 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=19f3962a-9ea2-427e-b75f-6ef29e80d91f, currentDir=/Users/sleusson/Documents/GitHub/prueba}. Dispatching build started information...
+2023-09-26T17:23:37.633-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@646805ae
+2023-09-26T17:23:37.635-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, __CFBundleIdentifier, SHELL, OLDPWD, USER, COMMAND_MODE, TMPDIR, SSH_AUTH_SOCK, XPC_FLAGS, __CF_USER_TEXT_ENCODING, LOGNAME, LC_CTYPE, XPC_SERVICE_NAME, HOME]
+2023-09-26T17:23:37.638-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 335: received class org.gradle.launcher.daemon.protocol.CloseInput
+2023-09-26T17:23:37.638-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 335: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@74e4dabd
+2023-09-26T17:23:37.638-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2023-09-26T17:23:37.639-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 13465). The daemon log file: /Users/sleusson/Documents/GitHub/prueba/gradle/daemon/6.8.3/daemon-13465.out.log
+2023-09-26T17:23:37.639-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 3rd build in daemon [uptime: 4 mins 22.034 secs, performance: 100%]
+2023-09-26T17:23:37.640-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2023-09-26T17:23:37.640-0500 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+2023-09-26T17:23:37.640-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=7c680301-c599-4ebd-8e66-50cf4dbcd71b,javaHome=/Users/sleusson/Library/Java/JavaVirtualMachines/corretto-11.0.19/Contents/Home,daemonRegistryDir=/Users/sleusson/Documents/GitHub/prueba/gradle/daemon,pid=13465,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]
+2023-09-26T17:23:37.641-0500 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+AGPBI: {"kind":"warning","text":"The option setting 'android.enableR8=true' is deprecated.\nIt will be removed in version 7.0 of the Android Gradle plugin.\nYou will no longer be able to disable R8","sources":[{}]}
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/03 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/03 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/03 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: elemento inesperado (URI:"", local:"extension-level"). Los elementos esperados son <{}codename>,<{}layoutlib>,<{}api-level>
+Warning: elemento inesperado (URI:"", local:"base-extension"). Los elementos esperados son <{}codename>,<{}layoutlib>,<{}api-level>
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:19: error: package android.annotation does not exist
+import android.annotation.TargetApi;
+                         ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:20: error: package android.app does not exist
+import android.app.Activity;
+                  ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:21: error: package android.app does not exist
+import android.app.Fragment;
+                  ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:22: error: package android.content does not exist
+import android.content.Intent;
+                      ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:23: error: package android.os does not exist
+import android.os.Build;
+                 ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:24: error: package android.os does not exist
+import android.os.Bundle;
+                 ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:82: error: cannot find symbol
+    private final Activity activity;
+                  ^
+  symbol:   class Activity
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:83: error: cannot find symbol
+    private Fragment fragment;
+            ^
+  symbol:   class Fragment
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:84: error: cannot find symbol
+    private Fragment supportFragment;
+            ^
+  symbol:   class Fragment
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:98: error: cannot find symbol
+    public IntentIntegrator(Activity activity) {
+                            ^
+  symbol:   class Activity
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:140: error: cannot find symbol
+    public static IntentIntegrator forSupportFragment(Fragment fragment) {
+                                                      ^
+  symbol:   class Fragment
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:152: error: cannot find symbol
+    public static IntentIntegrator forFragment(Fragment fragment) {
+                                               ^
+  symbol:   class Fragment
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:280: error: cannot find symbol
+    public Intent createScanIntent() {
+           ^
+  symbol:   class Intent
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:324: error: cannot find symbol
+    protected void startActivityForResult(Intent intent, int code) {
+                                          ^
+  symbol:   class Intent
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:334: error: cannot find symbol
+    protected void startActivity(Intent intent) {
+                                 ^
+  symbol:   class Intent
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:357: error: cannot find symbol
+    public static IntentResult parseActivityResult(int requestCode, int resultCode, Intent intent) {
+                                                                                    ^
+  symbol:   class Intent
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:372: error: cannot find symbol
+    public static IntentResult parseActivityResult(int resultCode, Intent intent) {
+                                                                   ^
+  symbol:   class Intent
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/integration/android/IntentIntegrator.java:395: error: cannot find symbol
+    private void attachMoreExtras(Intent intent) {
+                                  ^
+  symbol:   class Intent
+  location: class IntentIntegrator
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:19: error: package android.content does not exist
+import android.content.Context;
+                      ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:20: error: package android.hardware does not exist
+import android.hardware.Sensor;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:21: error: package android.hardware does not exist
+import android.hardware.SensorEvent;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:22: error: package android.hardware does not exist
+import android.hardware.SensorEventListener;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:23: error: package android.hardware does not exist
+import android.hardware.SensorManager;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:24: error: package android.os does not exist
+import android.os.Handler;
+                 ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:36: error: cannot find symbol
+public final class AmbientLightManager implements SensorEventListener {
+                                                  ^
+  symbol: class SensorEventListener
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:20: error: package android.hardware does not exist
+import android.hardware.Camera;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:22: error: package android.util does not exist
+import android.util.Log;
+                   ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:23: error: package android.view does not exist
+import android.view.Surface;
+                   ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:24: error: package android.view does not exist
+import android.view.SurfaceHolder;
+                   ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:43: error: cannot find symbol
+    private Sensor lightSensor;
+            ^
+  symbol:   class Sensor
+  location: class AmbientLightManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:44: error: cannot find symbol
+    private Context context;
+            ^
+  symbol:   class Context
+  location: class AmbientLightManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:46: error: cannot find symbol
+    private Handler handler;
+            ^
+  symbol:   class Handler
+  location: class AmbientLightManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:48: error: cannot find symbol
+    public AmbientLightManager(Context context, CameraManager cameraManager, CameraSettings settings) {
+                               ^
+  symbol:   class Context
+  location: class AmbientLightManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:84: error: cannot find symbol
+    public void onSensorChanged(SensorEvent sensorEvent) {
+                                ^
+  symbol:   class SensorEvent
+  location: class AmbientLightManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/AmbientLightManager.java:96: error: cannot find symbol
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+                                  ^
+  symbol:   class Sensor
+  location: class AmbientLightManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:55: error: cannot find symbol
+    private Camera camera;
+            ^
+  symbol:   class Camera
+  location: class CameraManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:56: error: package Camera does not exist
+    private Camera.CameraInfo cameraInfo;
+                  ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/AutoFocusManager.java:19: error: package android.hardware does not exist
+import android.hardware.Camera;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/AutoFocusManager.java:21: error: package android.os does not exist
+import android.os.Message;
+                 ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/AutoFocusManager.java:22: error: package android.util does not exist
+import android.util.Log;
+                   ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/DisplayConfiguration.java:3: error: package android.graphics does not exist
+import android.graphics.Rect;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:75: error: cannot find symbol
+    private Context context;
+            ^
+  symbol:   class Context
+  location: class CameraManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:78: error: package Camera does not exist
+    private final class CameraPreviewCallback implements Camera.PreviewCallback {
+                                                               ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:129: error: cannot find symbol
+    public CameraManager(Context context) {
+                         ^
+  symbol:   class Context
+  location: class CameraManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:165: error: cannot find symbol
+    public void setPreviewDisplay(SurfaceHolder holder) throws IOException {
+                                  ^
+  symbol:   class SurfaceHolder
+  location: class CameraManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:3: error: package android.graphics does not exist
+import android.graphics.SurfaceTexture;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:4: error: package android.hardware does not exist
+import android.hardware.Camera;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:5: error: package android.view does not exist
+import android.view.SurfaceHolder;
+                   ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:241: error: package Camera does not exist
+    private Camera.Parameters getDefaultCameraParameters() {
+                  ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:309: error: package Camera does not exist
+    private static List<Size> getPreviewSizes(Camera.Parameters parameters) {
+                                                    ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraParametersCallback.java:3: error: package android.hardware does not exist
+import android.hardware.Camera;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:518: error: cannot find symbol
+    public Camera getCamera() {
+           ^
+  symbol:   class Camera
+  location: class CameraManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraParametersCallback.java:16: error: package Camera does not exist
+    Camera.Parameters changeCameraParameters(Camera.Parameters parameters);
+                                                   ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraParametersCallback.java:16: error: package Camera does not exist
+    Camera.Parameters changeCameraParameters(Camera.Parameters parameters);
+          ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:3: error: package android.graphics does not exist
+import android.graphics.Bitmap;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:4: error: package android.graphics does not exist
+import android.graphics.BitmapFactory;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:5: error: package android.graphics does not exist
+import android.graphics.Matrix;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:6: error: package android.graphics does not exist
+import android.graphics.Rect;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:7: error: package android.graphics does not exist
+import android.graphics.YuvImage;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:33: error: cannot find symbol
+    private Rect cropRect;
+            ^
+  symbol:   class Rect
+  location: class SourceData
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:55: error: cannot find symbol
+    public Rect getCropRect() {
+           ^
+  symbol:   class Rect
+  location: class SourceData
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:64: error: cannot find symbol
+    public void setCropRect(Rect cropRect) {
+                            ^
+  symbol:   class Rect
+  location: class SourceData
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:117: error: cannot find symbol
+    public Bitmap getBitmap() {
+           ^
+  symbol:   class Bitmap
+  location: class SourceData
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:127: error: cannot find symbol
+    public Bitmap getBitmap(int scaleFactor) {
+           ^
+  symbol:   class Bitmap
+  location: class SourceData
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:131: error: cannot find symbol
+    private Bitmap getBitmap(Rect cropRect, int scaleFactor) {
+                             ^
+  symbol:   class Rect
+  location: class SourceData
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/SourceData.java:131: error: cannot find symbol
+    private Bitmap getBitmap(Rect cropRect, int scaleFactor) {
+            ^
+  symbol:   class Bitmap
+  location: class SourceData
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:15: error: cannot find symbol
+    private SurfaceHolder surfaceHolder;
+            ^
+  symbol:   class SurfaceHolder
+  location: class CameraSurface
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:16: error: cannot find symbol
+    private SurfaceTexture surfaceTexture;
+            ^
+  symbol:   class SurfaceTexture
+  location: class CameraSurface
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:18: error: cannot find symbol
+    public CameraSurface(SurfaceHolder surfaceHolder) {
+                         ^
+  symbol:   class SurfaceHolder
+  location: class CameraSurface
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:25: error: cannot find symbol
+    public CameraSurface(SurfaceTexture surfaceTexture) {
+                         ^
+  symbol:   class SurfaceTexture
+  location: class CameraSurface
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:32: error: cannot find symbol
+    public SurfaceHolder getSurfaceHolder() {
+           ^
+  symbol:   class SurfaceHolder
+  location: class CameraSurface
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:36: error: cannot find symbol
+    public SurfaceTexture getSurfaceTexture() {
+           ^
+  symbol:   class SurfaceTexture
+  location: class CameraSurface
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraSurface.java:40: error: cannot find symbol
+    public void setPreview(Camera camera) throws IOException {
+                           ^
+  symbol:   class Camera
+  location: class CameraSurface
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/CameraManager.java:95: error: cannot find symbol
+        public void onPreviewFrame(byte[] data, Camera camera) {
+                                                ^
+  symbol:   class Camera
+  location: class CameraManager.CameraPreviewCallback
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/PreviewScalingStrategy.java:3: error: package android.graphics does not exist
+import android.graphics.Rect;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/PreviewScalingStrategy.java:4: error: package android.util does not exist
+import android.util.Log;
+                   ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/DisplayConfiguration.java:95: error: cannot find symbol
+    public Rect scalePreview(Size previewSize) {
+           ^
+  symbol:   class Rect
+  location: class DisplayConfiguration
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/PreviewScalingStrategy.java:95: error: cannot find symbol
+    public abstract Rect scalePreview(Size previewSize, Size viewfinderSize);
+                    ^
+  symbol:   class Rect
+  location: class PreviewScalingStrategy
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/AutoFocusManager.java:40: error: cannot find symbol
+    private final Camera camera;
+                  ^
+  symbol:   class Camera
+  location: class AutoFocusManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/AutoFocusManager.java:41: error: cannot find symbol
+    private Handler handler;
+            ^
+  symbol:   class Handler
+  location: class AutoFocusManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/AutoFocusManager.java:53: error: package Handler does not exist
+    private final Handler.Callback focusHandlerCallback = new Handler.Callback() {
+                         ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/AutoFocusManager.java:64: error: package Camera does not exist
+    private final Camera.AutoFocusCallback autoFocusCallback = new Camera.AutoFocusCallback() {
+                        ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/journeyapps/barcodescanner/camera/AutoFocusManager.java:77: error: cannot find symbol
+    public AutoFocusManager(Camera camera, CameraSettings settings) {
+                            ^
+  symbol:   class Camera
+  location: class AutoFocusManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:19: error: package android.content does not exist
+import android.content.BroadcastReceiver;
+                      ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:22: error: package android.content does not exist
+import android.content.IntentFilter;
+                      ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:23: error: package android.os does not exist
+import android.os.BatteryManager;
+                 ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:35: error: cannot find symbol
+    private final Context context;
+                  ^
+  symbol:   class Context
+  location: class InactivityTimer
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:36: error: cannot find symbol
+    private final BroadcastReceiver powerStatusReceiver;
+                  ^
+  symbol:   class BroadcastReceiver
+  location: class InactivityTimer
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:38: error: cannot find symbol
+    private Handler handler;
+            ^
+  symbol:   class Handler
+  location: class InactivityTimer
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:42: error: cannot find symbol
+    public InactivityTimer(Context context, Runnable callback) {
+                           ^
+  symbol:   class Context
+  location: class InactivityTimer
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:104: error: cannot find symbol
+    private final class PowerStatusReceiver extends BroadcastReceiver {
+                                                    ^
+  symbol:   class BroadcastReceiver
+  location: class InactivityTimer
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:106: error: cannot find symbol
+        public void onReceive(Context context, Intent intent) {
+                              ^
+  symbol:   class Context
+  location: class InactivityTimer.PowerStatusReceiver
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/InactivityTimer.java:106: error: cannot find symbol
+        public void onReceive(Context context, Intent intent) {
+                                               ^
+  symbol:   class Intent
+  location: class InactivityTimer.PowerStatusReceiver
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/DecodeFormatManager.java:73: error: cannot find symbol
+    public static Set<BarcodeFormat> parseDecodeFormats(Intent intent) {
+                                                        ^
+  symbol:   class Intent
+  location: class DecodeFormatManager
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/camera/CameraConfigurationUtils.java:20: error: package android.graphics does not exist
+import android.graphics.Rect;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/camera/CameraConfigurationUtils.java:21: error: package android.hardware does not exist
+import android.hardware.Camera;
+                       ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/camera/CameraConfigurationUtils.java:23: error: package android.util does not exist
+import android.util.Log;
+                   ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/camera/CameraConfigurationUtils.java:54: error: package Camera does not exist
+    public static void setFocus(Camera.Parameters parameters,
+                                      ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/camera/CameraConfigurationUtils.java:96: error: package Camera does not exist
+    public static void setTorch(Camera.Parameters parameters, boolean on) {
+                                      ^
+/Users/sleusson/Documents/GitHub/prueba/zxing_custom/src/main/java/com/cetoco/zxing_android_embedded_custom/google/zxing/client/android/camera/CameraConfigurationUtils.java:119: error: package Camera does not exist
+    public static void setBestExposure(Camera.Parameters parameters, boolean lightOn) {
+                                             ^
+100 errors
+aapt2 W 09-26 17:24:04 14315 291318 LoadedArsc.cpp:682] Unknown chunk type '200'.
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':zxing_custom:compileDevelopDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 29s
+66 actionable tasks: 61 executed, 5 up-to-date
+2023-09-26T17:24:07.011-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2023-09-26T17:24:07.014-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:24:07.014-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=19f3962a-9ea2-427e-b75f-6ef29e80d91f, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55467]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@4921cb5a with state Busy
+2023-09-26T17:24:07.015-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=19f3962a-9ea2-427e-b75f-6ef29e80d91f, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55467]
+2023-09-26T17:24:07.015-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-09-26T17:24:07.015-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:24:07.015-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:24:07.016-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:24:07.016-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:07.017-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:07.017-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:24:07.017-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@3b2f8eaa]
+2023-09-26T17:24:07.018-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@3b2f8eaa]
+2023-09-26T17:24:07.020-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=19f3962a-9ea2-427e-b75f-6ef29e80d91f, currentDir=/Users/sleusson/Documents/GitHub/prueba}
+2023-09-26T17:24:07.029-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 335: received class org.gradle.launcher.daemon.protocol.Finished
+2023-09-26T17:24:07.029-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 335: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@538520c4
+2023-09-26T17:24:07.030-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@538520c4
+2023-09-26T17:24:07.030-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2023-09-26T17:24:07.030-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-09-26T17:24:07.030-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 335: received null
+2023-09-26T17:24:07.031-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 335: Received end-of-input from client.
+2023-09-26T17:24:07.031-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-09-26T17:24:15.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:15.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:15.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:15.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:15.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:15.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:25.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:25.907-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:25.908-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:25.909-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:25.909-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:25.910-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:25.910-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:25.910-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:25.910-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:35.897-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:35.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:35.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:35.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:35.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:35.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:35.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:35.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:35.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:41.723-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55512 to /127.0.0.1:55355.
+2023-09-26T17:24:41.752-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 383: received class org.gradle.launcher.daemon.protocol.Build
+2023-09-26T17:24:41.753-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 383: Received non-IO message from client: Build{id=23c8c8ae-8eab-453f-bcd7-cc8973a204aa, currentDir=/Users/sleusson/Documents/GitHub/prueba}
+2023-09-26T17:24:41.753-0500 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=23c8c8ae-8eab-453f-bcd7-cc8973a204aa, currentDir=/Users/sleusson/Documents/GitHub/prueba}.
+2023-09-26T17:24:41.753-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=23c8c8ae-8eab-453f-bcd7-cc8973a204aa, currentDir=/Users/sleusson/Documents/GitHub/prueba} with connection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55512.
+2023-09-26T17:24:41.756-0500 [ERROR] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=23c8c8ae-8eab-453f-bcd7-cc8973a204aa, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55512] after 0.0 minutes of idle
+2023-09-26T17:24:41.756-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:24:41.756-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:24:41.757-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:24:41.758-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:41.758-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:41.759-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-09-26T17:24:41.759-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:24:41.759-0500 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=23c8c8ae-8eab-453f-bcd7-cc8973a204aa, currentDir=/Users/sleusson/Documents/GitHub/prueba}. Dispatching build started information...
+2023-09-26T17:24:41.759-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 21: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@486e1e54
+2023-09-26T17:24:41.760-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 383: received class org.gradle.launcher.daemon.protocol.CloseInput
+2023-09-26T17:24:41.761-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 383: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@3d945bea
+2023-09-26T17:24:41.761-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, __CFBundleIdentifier, SHELL, OLDPWD, USER, COMMAND_MODE, TMPDIR, SSH_AUTH_SOCK, XPC_FLAGS, __CF_USER_TEXT_ENCODING, LOGNAME, LC_CTYPE, XPC_SERVICE_NAME, HOME]
+2023-09-26T17:24:41.762-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2023-09-26T17:24:41.762-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 13465). The daemon log file: /Users/sleusson/Documents/GitHub/prueba/gradle/daemon/6.8.3/daemon-13465.out.log
+2023-09-26T17:24:41.764-0500 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 4th build in daemon [uptime: 5 mins 26.159 secs, performance: 100%]
+2023-09-26T17:24:41.765-0500 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+2023-09-26T17:24:41.765-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2023-09-26T17:24:41.765-0500 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+2023-09-26T17:24:41.765-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=7c680301-c599-4ebd-8e66-50cf4dbcd71b,javaHome=/Users/sleusson/Library/Java/JavaVirtualMachines/corretto-11.0.19/Contents/Home,daemonRegistryDir=/Users/sleusson/Documents/GitHub/prueba/gradle/daemon,pid=13465,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,-Xmx1536m,-Dfile.encoding=UTF-8,-Duser.country=CO,-Duser.language=es,-Duser.variant]
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/common/02 to old ns http://schemas.android.com/repository/android/common/01
+Warning: Mapping new ns http://schemas.android.com/repository/android/generic/02 to old ns http://schemas.android.com/repository/android/generic/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/02 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/addon2/03 to old ns http://schemas.android.com/sdk/android/repo/addon2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/02 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/repository2/03 to old ns http://schemas.android.com/sdk/android/repo/repository2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/03 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: Mapping new ns http://schemas.android.com/sdk/android/repo/sys-img2/02 to old ns http://schemas.android.com/sdk/android/repo/sys-img2/01
+Warning: elemento inesperado (URI:"", local:"extension-level"). Los elementos esperados son <{}codename>,<{}layoutlib>,<{}api-level>
+Warning: elemento inesperado (URI:"", local:"base-extension"). Los elementos esperados son <{}codename>,<{}layoutlib>,<{}api-level>
+
+BUILD SUCCESSFUL in 5s
+2023-09-26T17:24:47.438-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2023-09-26T17:24:47.443-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=23c8c8ae-8eab-453f-bcd7-cc8973a204aa, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55512]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@4921cb5a with state Busy
+2023-09-26T17:24:47.444-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=23c8c8ae-8eab-453f-bcd7-cc8973a204aa, currentDir=/Users/sleusson/Documents/GitHub/prueba}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55512]
+2023-09-26T17:24:47.444-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-09-26T17:24:47.444-0500 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:24:47.444-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:24:47.444-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:24:47.445-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:47.445-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:47.446-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-09-26T17:24:47.446-0500 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@6cd2acc2]
+2023-09-26T17:24:47.446-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@6cd2acc2]
+2023-09-26T17:24:47.446-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=23c8c8ae-8eab-453f-bcd7-cc8973a204aa, currentDir=/Users/sleusson/Documents/GitHub/prueba}
+2023-09-26T17:24:47.451-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 383: received class org.gradle.launcher.daemon.protocol.Finished
+2023-09-26T17:24:47.452-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 383: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@7896d23c
+2023-09-26T17:24:47.452-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2023-09-26T17:24:47.452-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 383: received null
+2023-09-26T17:24:47.452-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 383: Received end-of-input from client.
+2023-09-26T17:24:47.452-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@7896d23c
+2023-09-26T17:24:47.452-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-09-26T17:24:47.453-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-09-26T17:24:55.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:55.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:55.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:24:55.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:24:55.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:24:55.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:05.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:05.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:05.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:05.905-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:05.905-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:05.906-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:05.906-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:05.907-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:05.907-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:08.549-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Lock on file hash cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/fileHashes) requested by another process - releasing lock.
+2023-09-26T17:25:08.549-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/fileHashes)
+2023-09-26T17:25:08.549-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/fileHashes/fileHashes.bin)
+2023-09-26T17:25:08.549-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resourceHashesCache.bin (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/fileHashes/resourceHashesCache.bin)
+2023-09-26T17:25:08.549-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/fileHashes).
+2023-09-26T17:25:08.551-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id -5125852989966790691.
+2023-09-26T17:25:08.551-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id -5125852989966790691.
+2023-09-26T17:25:08.641-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Lock on journal cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/journal-1) requested by another process - releasing lock.
+2023-09-26T17:25:08.641-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/journal-1)
+2023-09-26T17:25:08.641-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/journal-1/file-access.bin)
+2023-09-26T17:25:08.641-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/journal-1).
+2023-09-26T17:25:08.642-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id 3840697152844453233.
+2023-09-26T17:25:08.642-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id 3840697152844453233.
+2023-09-26T17:25:09.270-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Lock on execution history cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/executionHistory) requested by another process - releasing lock.
+2023-09-26T17:25:09.270-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for execution history cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/executionHistory)
+2023-09-26T17:25:09.270-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache executionHistory.bin (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/executionHistory/executionHistory.bin)
+2023-09-26T17:25:09.270-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on execution history cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/executionHistory).
+2023-09-26T17:25:09.271-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id -6217537257987548140.
+2023-09-26T17:25:09.271-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id -6217537257987548140.
+2023-09-26T17:25:09.354-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Lock on jars (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/jars-8) requested by another process - releasing lock.
+2023-09-26T17:25:09.354-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for jars (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/jars-8)
+2023-09-26T17:25:09.354-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/jars-8).
+2023-09-26T17:25:09.355-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id 8205192697279392537.
+2023-09-26T17:25:09.355-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id 8205192697279392537.
+2023-09-26T17:25:09.654-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Lock on file content cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/fileContent) requested by another process - releasing lock.
+2023-09-26T17:25:09.654-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/fileContent)
+2023-09-26T17:25:09.654-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache annotation-processors.bin (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/fileContent/annotation-processors.bin)
+2023-09-26T17:25:09.654-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/fileContent).
+2023-09-26T17:25:09.655-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id 3717974744262296671.
+2023-09-26T17:25:09.655-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id 3717974744262296671.
+2023-09-26T17:25:10.331-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Lock on artifact cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/modules-2) requested by another process - releasing lock.
+2023-09-26T17:25:10.331-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/modules-2)
+2023-09-26T17:25:10.331-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/modules-2/metadata-2.97/module-metadata.bin)
+2023-09-26T17:25:10.332-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifact.bin (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/modules-2/metadata-2.97/module-artifact.bin)
+2023-09-26T17:25:10.332-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifacts.bin (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/modules-2/metadata-2.97/module-artifacts.bin)
+2023-09-26T17:25:10.332-0500 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resource-at-url.bin (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/modules-2/metadata-2.97/resource-at-url.bin)
+2023-09-26T17:25:10.332-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/modules-2).
+2023-09-26T17:25:10.333-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id -8161359756990557581.
+2023-09-26T17:25:10.333-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id -8161359756990557581.
+2023-09-26T17:25:15.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:15.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:15.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:15.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:15.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:15.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:15.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:15.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:15.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:16.132-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Lock on Artifact transforms cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/transforms-3) requested by another process - releasing lock.
+2023-09-26T17:25:16.132-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Artifact transforms cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/transforms-3)
+2023-09-26T17:25:16.132-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Artifact transforms cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/transforms-3).
+2023-09-26T17:25:16.133-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id -7654999246612588527.
+2023-09-26T17:25:16.134-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id -7654999246612588527.
+2023-09-26T17:25:23.051-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Lock on Java compile cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/javaCompile) requested by another process - releasing lock.
+2023-09-26T17:25:23.052-0500 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Java compile cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/javaCompile)
+2023-09-26T17:25:23.052-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Java compile cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/javaCompile).
+2023-09-26T17:25:23.053-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id 2279831381602687696.
+2023-09-26T17:25:23.053-0500 [DEBUG] [org.gradle.cache.internal.locklistener.FileLockCommunicator] Confirming lock release to Gradle process at port 65382 for lock with id 2279831381602687696.
+2023-09-26T17:25:25.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:25.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:25.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:25.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:25.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:25.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:25.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:25.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:25.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:35.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:35.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:35.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:35.906-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:35.906-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:35.906-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:35.907-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:35.907-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:35.907-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:45.897-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:45.897-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:45.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:45.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:45.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:45.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:45.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:45.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:45.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:55.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:55.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:55.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:55.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:55.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:55.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:25:55.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:25:55.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:25:55.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:05.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:05.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:05.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:05.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:05.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:05.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:05.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:05.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:05.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:15.897-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:15.898-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:15.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:15.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:15.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:15.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:15.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:15.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:15.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:25.896-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:25.897-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:25.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:25.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:25.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:25.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:25.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:25.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:25.905-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:35.897-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:35.899-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:35.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:35.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:35.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:35.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:35.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:35.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:35.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:45.900-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:45.901-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:45.902-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:45.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:45.903-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:45.904-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:45.905-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-09-26T17:26:45.905-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:45.905-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:47.632-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55534 to /127.0.0.1:55355.
+2023-09-26T17:26:47.661-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 539: received class org.gradle.launcher.daemon.protocol.StopWhenIdle
+2023-09-26T17:26:47.661-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 539: Received non-IO message from client: StopWhenIdle[id=a6c21be0-f302-4933-868c-bf960b1c52ab]
+2023-09-26T17:26:47.662-0500 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: StopWhenIdle[id=a6c21be0-f302-4933-868c-bf960b1c52ab].
+2023-09-26T17:26:47.662-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: StopWhenIdle[id=a6c21be0-f302-4933-868c-bf960b1c52ab] with connection: socket connection from /127.0.0.1:55355 to /127.0.0.1:55534.
+2023-09-26T17:26:47.663-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Storing daemon stop event: stop command received
+2023-09-26T17:26:47.673-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon stop event with timestamp 1695767207664
+2023-09-26T17:26:47.675-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:26:47.677-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:47.679-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:47.680-0500 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon will be stopped at the end of the build stop command received
+2023-09-26T17:26:47.680-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to stop command received. The daemon is running a build: false
+2023-09-26T17:26:47.681-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 538: dispatching Success[value=null]
+2023-09-26T17:26:47.681-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon has stopped.
+2023-09-26T17:26:47.681-0500 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2023-09-26T17:26:47.681-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: StopWhenIdle[id=a6c21be0-f302-4933-868c-bf960b1c52ab]
+2023-09-26T17:26:47.682-0500 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2023-09-26T17:26:47.682-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 539: received class org.gradle.launcher.daemon.protocol.Finished
+2023-09-26T17:26:47.682-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 539: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@779778d
+2023-09-26T17:26:47.683-0500 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2023-09-26T17:26:47.683-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 539: received null
+2023-09-26T17:26:47.683-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 539: Received end-of-input from client.
+2023-09-26T17:26:47.683-0500 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@779778d
+2023-09-26T17:26:47.684-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 538: stopping connection
+2023-09-26T17:26:47.684-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:26:47.689-0500 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:26:47.690-0500 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 538: stopping connection
+2023-09-26T17:26:47.697-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:26:47.698-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:47.702-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-09-26T17:26:47.702-0500 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2023-09-26T17:26:47.837-0500 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/jars-8) has last been fully cleaned up 0 hours ago
+2023-09-26T17:26:47.850-0500 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Artifact transforms cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/transforms-3) has last been fully cleaned up 0 hours ago
+2023-09-26T17:26:47.851-0500 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/modules-2) has last been fully cleaned up 0 hours ago
+2023-09-26T17:26:47.852-0500 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Generated Gradle JARs cache (/Users/sleusson/Documents/GitHub/prueba/gradle/caches/6.8.3/generated-gradle-jars) was closed 0 times.
+2023-09-26T17:26:47.859-0500 [DEBUGDaemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [296b6863-fcbe-40e5-9d62-0b55a163ef12 port:55355, addresses:[localhost/127.0.0.1]]
+2023-09-26T17:26:47.859-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-09-26T17:26:47.859-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-09-26T17:26:47.860-0500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.

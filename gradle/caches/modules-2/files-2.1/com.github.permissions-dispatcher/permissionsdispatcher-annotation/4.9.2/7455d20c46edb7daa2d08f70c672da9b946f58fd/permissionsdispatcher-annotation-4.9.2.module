@@ -1,0 +1,61 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.permissions-dispatcher",
+    "module": "permissionsdispatcher-annotation",
+    "version": "4.9.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "rlmposmaufcovnoazkk5234a7q"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "permissionsdispatcher-annotation-4.9.2.jar",
+          "url": "permissionsdispatcher-annotation-4.9.2.jar",
+          "size": 3291,
+          "sha512": "f15f06acb43d2f6f04c0aa0f3eff0c47503fdef628cdd390bacf5bb06751c571c9d6e712a54578b6f326ec1e420d9a958001c3a9279d44e0d7b6d8f910b03b11",
+          "sha256": "42603397411737eda33f9ed71f72fc5dae65fbc9da84c54a59d7e5e2f9ca08ef",
+          "sha1": "754f45d04e254b0af55deb3aa76cb3b31e4b4718",
+          "md5": "e1461a6e0b16fbccd09375b6b3907317"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "permissionsdispatcher-annotation-4.9.2.jar",
+          "url": "permissionsdispatcher-annotation-4.9.2.jar",
+          "size": 3291,
+          "sha512": "f15f06acb43d2f6f04c0aa0f3eff0c47503fdef628cdd390bacf5bb06751c571c9d6e712a54578b6f326ec1e420d9a958001c3a9279d44e0d7b6d8f910b03b11",
+          "sha256": "42603397411737eda33f9ed71f72fc5dae65fbc9da84c54a59d7e5e2f9ca08ef",
+          "sha1": "754f45d04e254b0af55deb3aa76cb3b31e4b4718",
+          "md5": "e1461a6e0b16fbccd09375b6b3907317"
+        }
+      ]
+    }
+  ]
+}

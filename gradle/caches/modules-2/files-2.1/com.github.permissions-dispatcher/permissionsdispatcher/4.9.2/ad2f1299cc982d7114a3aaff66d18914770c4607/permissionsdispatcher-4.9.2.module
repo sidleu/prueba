@@ -1,0 +1,98 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.permissions-dispatcher",
+    "module": "permissionsdispatcher",
+    "version": "4.9.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "rlmposmaufcovnoazkk5234a7q"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.github.permissions-dispatcher",
+          "module": "permissionsdispatcher-annotation",
+          "version": {
+            "requires": "4.9.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "permissionsdispatcher-4.9.2.aar",
+          "url": "permissionsdispatcher-4.9.2.aar",
+          "size": 3893,
+          "sha512": "b02bc133588eb334e288a5b5bb6608d339def5c86b9e247dfe481bbb3b23775ee6efe00688a7dac792babea54e076ea96267bc63a9a73549a7bfdcc969d4f346",
+          "sha256": "96b057366445466b72d3e69f86d181515b23680e9c29833f240919244995906a",
+          "sha1": "40a4a084e81cb0c9811f17fa0a01a49a967a42f1",
+          "md5": "9d44cd7f70316111d569c0a01a6fd22a"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.fragment",
+          "module": "fragment",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "androidx.collection",
+          "module": "collection",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "com.github.permissions-dispatcher",
+          "module": "permissionsdispatcher-annotation",
+          "version": {
+            "requires": "4.9.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "permissionsdispatcher-4.9.2.aar",
+          "url": "permissionsdispatcher-4.9.2.aar",
+          "size": 3893,
+          "sha512": "b02bc133588eb334e288a5b5bb6608d339def5c86b9e247dfe481bbb3b23775ee6efe00688a7dac792babea54e076ea96267bc63a9a73549a7bfdcc969d4f346",
+          "sha256": "96b057366445466b72d3e69f86d181515b23680e9c29833f240919244995906a",
+          "sha1": "40a4a084e81cb0c9811f17fa0a01a49a967a42f1",
+          "md5": "9d44cd7f70316111d569c0a01a6fd22a"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/prueba.iml" filepath="$PROJECT_DIR$/.idea/prueba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/prueba.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/prueba.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/prueba.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/prueba.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/prueba.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/prueba.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/prueba.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/prueba.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reconosersdk/prueba.reconosersdk.iml" filepath="$PROJECT_DIR$/.idea/modules/reconosersdk/prueba.reconosersdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reconosersdk/prueba.reconosersdk.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/reconosersdk/prueba.reconosersdk.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reconosersdk/prueba.reconosersdk.main.iml" filepath="$PROJECT_DIR$/.idea/modules/reconosersdk/prueba.reconosersdk.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reconosersdk/prueba.reconosersdk.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/reconosersdk/prueba.reconosersdk.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zxing_custom/prueba.zxing_custom.iml" filepath="$PROJECT_DIR$/.idea/modules/zxing_custom/prueba.zxing_custom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zxing_custom/prueba.zxing_custom.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/zxing_custom/prueba.zxing_custom.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zxing_custom/prueba.zxing_custom.main.iml" filepath="$PROJECT_DIR$/.idea/modules/zxing_custom/prueba.zxing_custom.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zxing_custom/prueba.zxing_custom.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/zxing_custom/prueba.zxing_custom.unitTest.iml" />
+    </modules>
+  </component>
+</project>

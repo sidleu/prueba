@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.mlkit:common:17.2.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gradle/caches/transforms-3/6b3ad12144a1b4ba94c8239955fd4dd9/transformed/jetified-common-17.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/gradle/caches/transforms-3/6b3ad12144a1b4ba94c8239955fd4dd9/transformed/jetified-common-17.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/gradle/caches/modules-2/files-2.1/com.google.mlkit/common/17.2.0/79c1584a5f35389e648a9265798e6ba4c38a6483/common-17.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

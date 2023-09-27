@@ -2,9 +2,10 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-parcelize'
+    id 'maven-publish'
 }
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'maven-publish'
+/*apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'maven-publish'*/
 group = group_reconoserId
 
 /*// Because the components are created only during the afterEvaluate phase, you must
@@ -35,8 +36,8 @@ afterEvaluate {
                     from components.findByName('release')
                         //from components.release
                     // You can then customize attributes of the publication as shown below.
-                    groupId = 'com.github.reconoser'
-                    artifactId = 'reconosersdk'
+                    groupId = 'com.github.sidleu'
+                    artifactId = 'prueba'
                     version = library_version
                 }
             }
@@ -57,8 +58,6 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 33
-        versionCode 11
-        versionName library_version
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
